@@ -10,11 +10,22 @@ html,body{
 }
 
 #rect{
-    height: 200px;
-    width: 150px;
+    height: 100px;
+    width: 100px;
     background-color: green;
     position: absolute;
     top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 100px;
+}
+
+#squa{
+    height: 100px;
+    width: 150px;
+    background-color: red;
+    position: absolute;
+    top: 25%;
     left: 50%;
     transform: translate(-50%,-50%);
 }
