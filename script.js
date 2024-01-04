@@ -16,6 +16,8 @@ rectangle.addEventListener("mousemove", function (data) {
   });
 });
 
+
+
 square.addEventListener("mousemove", function(go) {
   console.log(go.clientY);
   let upp = gsap.utils.mapRange(0, Window.innerHeight, 35, window.innerHeight - 20,go.clientY);
