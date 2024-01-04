@@ -10,21 +10,23 @@ rectangle.addEventListener("mousemove", function (data) {
     window.innerWidth - 80,
     data.clientX
   );
+  let upp = gsap.utils.mapRange(0, window.innerHeight, 100, window.innerHeight - 100,data.clientY);
   gsap.to("#rect", {
     left: movee,
-    ease: Power3
+    top:upp,
+    ease: Power1
   });
 });
 
 
 
-square.addEventListener("mousemove", function(go) {
+// square.addEventListener("mousemove", function(go) {
  
-  let upp = gsap.utils.mapRange(0, window.innerHeight, 100, window.innerHeight - 100,go.clientY);
-  gsap.to("#squa",{
-    top:upp,
-    ease: Power1
-  })
-});
+//   let upp = gsap.utils.mapRange(0, window.innerHeight, 100, window.innerHeight - 100,go.clientY);
+//   gsap.to("#squa",{
+//     top:upp,
+//     ease: Power1
+//   })
+// });
 
 
