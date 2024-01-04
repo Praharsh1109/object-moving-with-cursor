@@ -19,10 +19,12 @@ rectangle.addEventListener("mousemove", function (data) {
 
 
 square.addEventListener("mousemove", function(go) {
-  console.log(go.clientY);
-  let upp = gsap.utils.mapRange(0, Window.innerHeight, 35, window.innerHeight - 20,go.clientY);
+ 
+  let upp = gsap.utils.mapRange(0, window.innerHeight, 100, window.innerHeight - 100,go.clientY);
   gsap.to("#squa",{
     top:upp,
-    ease : Power3
+    ease: Power1
   })
 });
+
+
