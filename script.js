@@ -41,7 +41,7 @@ circle.addEventListener("mousemove",function(details){
       var greenColor=  gsap.utils.mapRange(circleLocation.width/2,circleLocation.width,0,200,insideCircLeft)
       gsap.to(circle,{
           backgroundColor: `rgb(0,${greenColor},0)`,
-          ease:Power4
+          ease:Power1
       })
   }   
 })
@@ -62,7 +62,7 @@ circle.addEventListener("mousemove",function(detailsup){
       var greenColor=  gsap.utils.mapRange(circleLocation.height/2,circleLocation.height,0,200,insideCircUp)
       gsap.to(circle,{
           backgroundColor: `rgb(0,${greenColor},0)`,
-          ease:Power4
+          ease:Power1
       })
   }   
 })
